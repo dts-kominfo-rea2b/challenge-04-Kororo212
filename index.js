@@ -12,7 +12,7 @@ const dates = [
 const createDate = (dates,i) => {
   const res = [];
   for (const date of dates) {
-    res.push((new Date(date).getTime() / 1000));
+    res.push((new Date(date).getTime() / 1000).toString());
   }
   return i === undefined 
     ? res.sort((z, y) => z - y).join("-")
