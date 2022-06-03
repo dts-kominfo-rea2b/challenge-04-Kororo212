@@ -10,7 +10,7 @@ const dates = [
 // TODO: Buatlah fungsi createDate
 
 const createDate = (dates,i) => {
-  const res = '';
+  const res = [];
   for (const date of dates) {
     res.push((new Date(date).getTime() / 1000));
   }
